@@ -24,6 +24,33 @@ body {
   height:auto;
 }
 
+/*---------HEADER PRINCIPAL---------*/
+.headerPrincipal {
+  background-color: #0a0d10; /* Color de fondo */
+  border-bottom: 0.1em solid transparent; /* Borde transparente en la parte inferior */
+  border-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%) 1;
+  border-bottom-width: thin thick medium thin;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing:-1.5px;
+}
+@media (max-width: 320px) {
+  h1 {
+    display:none;
+  }
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+/*---------HEADER PRINCIPAL---------*/
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
