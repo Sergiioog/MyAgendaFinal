@@ -1,4 +1,5 @@
 import Image from "next/image";
+import OffCanvas from "./ui/OffCanvas";
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
         />   
         <h1 className="text-white ml-2">MyAgenda</h1>     
       </figure>
-
+      <div className="bg-red-500">
+        <OffCanvas />
+      </div>
       </section>
     </main>
   );
