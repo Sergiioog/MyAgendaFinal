@@ -21,7 +21,7 @@ export default function Home() {
           <OffCanvas />
         </div>
       </section>
-      <section className="h-[300px] ">
+      <section className="h-[300px] relative">
         <ImagesSlider
           images={[
             "/assets/images/carrusel1.jpeg",
@@ -31,6 +31,10 @@ export default function Home() {
           autoplay={true}
           direction='up'
         />
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-5">
+          <h2 className="h2 text-center">MyAgenda</h2>
+          <h3 className="h3 text-center">Tu aplicación deportiva favorita</h3>
+        </div>
       </section>
       
 
