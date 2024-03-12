@@ -23,6 +23,35 @@ body {
   min-height: 100vh;
   height:auto;
 }
+.h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1; /* Ajusta este valor según sea necesario */
+  margin-bottom: 10px;
+}
+
+.h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1; /* Ajusta este valor según sea necesario */
+}
+.h3-secciones {
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+.textos {
+  color:rgb(174, 174, 174) !important; 
+  font-size: 1.1rem;
+  font-weight: 500;
+
+}
 
 /*---------HEADER PRINCIPAL---------*/
 .headerPrincipal {
