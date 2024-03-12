@@ -1,6 +1,7 @@
 import Image from "next/image";
 import OffCanvas from "./ui/OffCanvas";
 import { ImagesSlider } from "./ui/image-slider";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,6 +35,21 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center p-5">
           <h2 className="h2 text-center">MyAgenda</h2>
           <h3 className="h3 text-center">Tu aplicación deportiva favorita</h3>
+        </div>
+      </section>
+      <section className="h-auto w-full relative mt-10">
+        <h3 className="h3-secciones text-center">Qué es MyAgenda</h3>
+        <p className="textos mt-5 max-w-[90%] w-[90%] m-auto " >My agenda es una aplicacion que sirve para que los usuarios 
+          de gimnasio puedan realizar sus registros personales. 
+        </p>
+        <br />
+        <p className="textos max-w-[90%] w-[90%] m-auto " >
+          A medida
+          que se van rellenando estos registros, el usuario podrá ver sus estadísticas
+          las cuáles va a ver si se desarrolla correctamente y si está ganando masa muscular.
+        </p>
+        <div className="w-full flex justify-center items-center mt-5">
+          <button className="bg-red-500"><Link href={"/"} />PROBAR MYAGENDA</button>
         </div>
       </section>
       
