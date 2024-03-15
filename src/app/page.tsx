@@ -1,7 +1,8 @@
 import Image from "next/image";
 import OffCanvas from "./ui/OffCanvas";
 import { ImagesSlider } from "./ui/image-slider";
-import Link from "next/link";
+import PrimaryButton from "./ui/button1";
+
 
 export default function Home() {
   return (
@@ -49,7 +50,8 @@ export default function Home() {
           las cuáles va a ver si se desarrolla correctamente y si está ganando masa muscular.
         </p>
         <div className="w-full flex justify-center items-center mt-5">
-          <button className="bg-red-800"><Link href={"/"} />PROBAR MYAGENDA</button>
+          <PrimaryButton />
+
         </div>
       </section>
       

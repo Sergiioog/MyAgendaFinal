@@ -77,7 +77,10 @@ h1 {
   }
 }
 /*---------HEADER PRINCIPAL---------*/
-
+/*---------BOTON1------------*/
+.textoBoton {
+  font-size: 1rem;
+}
 
 
 @layer utilities {
