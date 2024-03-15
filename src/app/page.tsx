@@ -49,7 +49,7 @@ export default function Home() {
           las cuáles va a ver si se desarrolla correctamente y si está ganando masa muscular.
         </p>
         <div className="w-full flex justify-center items-center mt-5">
-          <button className="bg-red-500"><Link href={"/"} />PROBAR MYAGENDA</button>
+          <button className="bg-red-800"><Link href={"/"} />PROBAR MYAGENDA</button>
         </div>
       </section>
       
