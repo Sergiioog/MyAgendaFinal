@@ -1,14 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Color, Fog, PerspectiveCamera, Vector3 } from "three";
-import { Canvas, extend, useThree } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
+import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import countries from "../data/globe.json";
-
 declare module "@react-three/fiber" {
   interface ThreeElements {
-    threeGlobe: ThreeGlobe;
+    threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
   }
 }
 
@@ -61,14 +60,17 @@ interface WorldProps {
 
 let numbersOfRings = [0];
 
-export function World({ globeConfig, data }: WorldProps) {
-  const [globeData, setGlobeData] = useState<{
-    size: number;
-    order: number;
-    color: (t: number) => string;
-    lat: number;
-    lng: number;
-  }[] | null>(null);
+export function Globe({ globeConfig, data }: WorldProps) {
+  const [globeData, setGlobeData] = useState<
+    | {
+        size: number;
+        order: number;
+        color: (t: number) => string;
+        lat: number;
+        lng: number;
+      }[]
+    | null
+  >(null);
 
   const globeRef = useRef<ThreeGlobe | null>(null);
 
@@ -133,7 +135,7 @@ export function World({ globeConfig, data }: WorldProps) {
       });
     }
 
-    // Remove duplicates for same lat and lng
+    // remove duplicates for same lat and lng
     const filteredPoints = points.filter(
       (v, i, a) =>
         a.findIndex((v2) =>
@@ -222,37 +224,56 @@ export function World({ globeConfig, data }: WorldProps) {
   }, [globeRef.current, globeData]);
 
   return (
-    <Canvas
-      style={{ width: "100%", height: "100%" }}
-      camera={{ position: [0, 0, cameraZ], fov: 50, aspect }}
-    >
-      <scene fog={new Fog(0xffffff, 400, 2000)}>
-        <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
-        <directionalLight
-          color={globeConfig.directionalLeftLight}
-          position={new Vector3(-400, 100, 400)}
-        />
-        <directionalLight
-          color={globeConfig.directionalTopLight}
-          position={new Vector3(-200, 500, 200)}
-        />
-        <pointLight
-          color={globeConfig.pointLight}
-          position={new Vector3(-200, 500, 200)}
-          intensity={0.8}
-        />
-        
-        <OrbitControls
-          enablePan={false}
-          enableZoom={false}
-          minDistance={cameraZ}
-          maxDistance={cameraZ}
-          autoRotateSpeed={1}
-          autoRotate={true}
-          minPolarAngle={Math.PI / 3.5}
-          maxPolarAngle={Math.PI - Math.PI / 3}
-        />
-      </scene>
+    <>
+      <threeGlobe ref={globeRef} />
+    </>
+  );
+}
+
+export function WebGLRendererConfig() {
+  const { gl, size } = useThree();
+
+  useEffect(() => {
+    gl.setPixelRatio(window.devicePixelRatio);
+    gl.setSize(size.width, size.height);
+    gl.setClearColor(0xffaaff, 0);
+  }, []);
+
+  return null;
+}
+
+export function World(props: WorldProps) {
+  const { globeConfig } = props;
+  const scene = new Scene();
+  scene.fog = new Fog(0xffffff, 400, 2000);
+  return (
+    <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
+      <WebGLRendererConfig />
+      <ambientLight color={globeConfig.ambientLight} intensity={0.6} />
+      <directionalLight
+        color={globeConfig.directionalLeftLight}
+        position={new Vector3(-400, 100, 400)}
+      />
+      <directionalLight
+        color={globeConfig.directionalTopLight}
+        position={new Vector3(-200, 500, 200)}
+      />
+      <pointLight
+        color={globeConfig.pointLight}
+        position={new Vector3(-200, 500, 200)}
+        intensity={0.8}
+      />
+      <Globe {...props} />
+      <OrbitControls
+        enablePan={false}
+        enableZoom={false}
+        minDistance={cameraZ}
+        maxDistance={cameraZ}
+        autoRotateSpeed={1}
+        autoRotate={true}
+        minPolarAngle={Math.PI / 3.5}
+        maxPolarAngle={Math.PI - Math.PI / 3}
+      />
     </Canvas>
   );
 }
