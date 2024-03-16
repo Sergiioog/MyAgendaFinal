@@ -412,7 +412,7 @@ export function GlobeDemo() {
           className="div"
         >
         <h3 className="h3-secciones text-center">Cuándo quieras, dónde quieras</h3>
-          <p className="textos text-center max-w-[90%] w-[90%] m-auto text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 mt-5 mx-auto">
+          <p className="textos text-center  text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 mt-5 mx-auto">
             MyAgenda está disponible y accesible en todo el mundo, para seguir con tus objetivos
           </p>
         </motion.div>
