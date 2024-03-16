@@ -4,7 +4,7 @@ import { ImagesSlider } from "./ui/image-slider";
 import PrimaryButton from "./ui/button1";
 import { GlobeDemo } from "./ui/globe2";
 import BentoGrid from "./ui/bentogrid";
-
+import { InfiniteMovingCardsDemo } from "./ui/infinite-cards";
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -61,7 +61,42 @@ export default function Home() {
       <section className="h-auto w-full relative mt-10">
         <GlobeDemo />
       </section>
-      
+      <section className="h-auto w-full relative mt-10">
+        <h3 className="h3-secciones text-center">Opiniones de nuestros usuarios.</h3>
+        <InfiniteMovingCardsDemo />
+      </section>
+      <section className="h-auto w-full relative mt-10">
+        <h3 className="h3-secciones text-center">Por qué MyAgenda</h3>
+        <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+  </div>
+
+</section>
+
+
+      </section>
 
     </main>
   );
