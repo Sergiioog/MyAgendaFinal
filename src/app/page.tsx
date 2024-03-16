@@ -3,6 +3,7 @@ import OffCanvas from "./ui/OffCanvas";
 import { ImagesSlider } from "./ui/image-slider";
 import PrimaryButton from "./ui/button1";
 import { GlobeDemo } from "./ui/globe2";
+import BentoGrid from "./ui/bentogrid";
 
 export default function Home() {
   return (
@@ -53,9 +54,12 @@ export default function Home() {
           <PrimaryButton />
         </div>
       </section>
+      <section className="h-auto w-full relative mt-10 ">
+        <h3 className="h3-secciones text-center">MyAgenda, características</h3>
+        <BentoGrid />
+      </section>
       <section className="h-auto w-full relative mt-10">
-      <GlobeDemo />
-
+        <GlobeDemo />
       </section>
       
 

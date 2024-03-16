@@ -81,6 +81,15 @@ h1 {
 .textoBoton {
   font-size: 1rem;
 }
+/*-----------BENTO GRID----------*/
+.bg-noise {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=3f7ae800&noise=ffffff&density=100&opacity=100);
+  pointer-events: none;
+}
+
 
 
 @layer utilities {

@@ -411,16 +411,13 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-white">
-            We sell soap worldwide
-          </h2>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, and
-            don&apos;t forget to share it. :)
+        <h3 className="h3-secciones text-center">Cuándo quieras, dónde quieras</h3>
+          <p className="textos text-center  text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 mt-5 mx-auto">
+            MyAgenda está disponible y accesible en todo el mundo, para seguir con tus objetivos
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-50 bg-gradient-to-b pointer-events-none select-none   z-40" />
-        <div className="absolute inset-0 mr-1 mt-28 z-10 w-full h-96 md:h-full">
+        <div className="absolute inset-0 mr-1 mt-32 z-10 w-full h-96 md:h-full">
             <World data={sampleArcs} globeConfig={globeConfig} />;
         </div>
       </div>
