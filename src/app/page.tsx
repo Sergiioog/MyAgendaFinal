@@ -67,37 +67,47 @@ export default function Home() {
         <h3 className="h3-secciones text-center">Opiniones de nuestros usuarios.</h3>
         <InfiniteMovingCardsDemo />
       </section>
-      <section className="h-auto w-full relative mt-10">
+      <section className="h-auto w-full relative mt-24">
         <h3 className="h3-secciones text-center">Por qué MyAgenda</h3>
+        <p className="textos max-w-[90%] w-[90%] m-auto  mt-6" >
+          A medida
+          que se van rellenando estos registros, el usuario podrá ver sus 
+        </p>
         <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
 
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
           </div>
-
         </section>
       </section>
-
+        
+      <section className="w-[100%] mt-24 flex flex-col justify-center m-auto items-center flex-wrap">
+        <h3 className="h3-secciones text-center">MyAgenda, tu aplicación favorita</h3>
+        <section className="w-full flex justify-center items-center mt-8">
+            <Image src={"/assets/mock/mockmob/mobilem.png"} alt="Movil" height={400} width={400} />
+        </section>
+        <section className="w-full flex justify-center items-center mt-8">
+            <Image src={"/assets/mock/mocktab/tabletmob.png"} alt="Tablet" height={300} width={300} />
+        </section>
+        <section className="w-full flex justify-center items-center mt-8">
+            <Image src={"/assets/mock/mockdesk/laptopmob.png"} alt="Movil" height={400} width={380} />
+        </section>
+      </section>
     </main>
   );
 }
