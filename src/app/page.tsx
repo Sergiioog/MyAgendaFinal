@@ -76,22 +76,22 @@ export default function Home() {
         <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
 
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
           </div>
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/gym2.svg"} alt="Gym icono" height={40} width={40}/>
           </div>
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/book.svg"} alt="Libro icono" height={40} width={40}/>
           </div>
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/gym.svg"} alt="Gym2 icono" height={40} width={40}/>
           </div>
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/stats.svg"} alt="Estadisticas Icono" height={40} width={40}/>
           </div>
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+            <Image src={"assets/icons/corazon.svg"} alt="Corazón Icono" height={40} width={40}/>
           </div>
         </section>
       </section>
