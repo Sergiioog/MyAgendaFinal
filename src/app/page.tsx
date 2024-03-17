@@ -60,10 +60,10 @@ export default function Home() {
         <BentoGrid />
       </section>
 
-      <section className="h-auto w-full relative mt-10">
+      <section className="h-auto w-full relative mt-24 ">
         <GlobeDemo />
       </section>
-      <section className="h-auto w-full relative mt-10">
+      <section className="h-auto w-full relative mt-[-50px]">
         <h3 className="h3-secciones text-center">Opiniones de nuestros usuarios.</h3>
         <InfiniteMovingCardsDemo />
       </section>

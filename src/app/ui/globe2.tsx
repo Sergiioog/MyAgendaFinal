@@ -10,11 +10,11 @@ const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
 export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#062056",
+    globeColor: "#3b5998", // Cambiado a un azul más claro
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
-    atmosphereAltitude: 0.1,
-    emissive: "#062056",
+    atmosphereAltitude: 0.15,
+    emissive: "#3b5998", // Cambiado a un azul más claro
     emissiveIntensity: 0.1,
     shininess: 1.5,
     polygonColor: "rgba(255,255,255,0.7)",
@@ -30,6 +30,7 @@ export function GlobeDemo() {
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
+  
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
   const sampleArcs = [
     {
@@ -395,7 +396,7 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen bg-transparent md:h-auto  relative w-full">
+    <div className="flex flex-row items-center justify-center mt-24 h-screen bg-transparent md:h-auto  relative w-full ">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] sm:h-[30rem] xs:h-[20rem] px-4">
         <motion.div
           initial={{
@@ -412,12 +413,12 @@ export function GlobeDemo() {
           className="div"
         >
         <h3 className="h3-secciones text-center">Cuándo quieras, dónde quieras</h3>
-          <p className="textos text-center  text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 mt-5 mx-auto">
+          <p className="textos text-center mt-8  text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200  mx-auto">
             MyAgenda está disponible y accesible en todo el mundo, para seguir con tus objetivos
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-50 bg-gradient-to-b pointer-events-none select-none   z-40" />
-        <div className="absolute inset-0 mr-1 mt-32 z-10 w-full h-96 md:h-full">
+        <div className="absolute inset-0 mr-1 mt-28 z-10 w-full h-96 md:h-full">
             <World data={sampleArcs} globeConfig={globeConfig} />;
         </div>
       </div>

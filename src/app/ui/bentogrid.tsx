@@ -18,7 +18,7 @@ export default function BentoGrid() {
 
             <div className="item w-full h-auto mt-4 rounded-md relative overflow-hidden flex justify-between flex-col hover:translate-x-1 transition-transform duration-500 ease-in-out hover:cursor-pointer">
               <div className="w-full h-8 flex justify-start items-center p-2">
-                <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={20} width={20}/>
+                <Image src={"assets/icons/stats.svg"} alt="Imagen" height={20} width={20}/>
                 <h4 className="ml-[4px] text-sm font-bold text-neutral-300">Estadísticas del usuario</h4>
               </div>
               <div className="w-full h-auto flex justify-start items-center font-semibold p-2 mt-[-7px]">
@@ -30,7 +30,7 @@ export default function BentoGrid() {
 
             <div className="item w-full h-auto mt-4 rounded-md relative overflow-hidden flex justify-between flex-col hover:translate-x-1 transition-transform duration-500 ease-in-out hover:cursor-pointer">
               <div className="w-full h-8 flex justify-start items-center p-2">
-                <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={20} width={20}/>
+                <Image src={"assets/icons/stretch.svg"} alt="Imagen" height={20} width={20}/>
                 <h4 className="ml-[4px] text-sm font-bold text-neutral-300">Sección de estiramientos</h4>
               </div>
               <div className="w-full h-auto flex justify-start items-center font-semibold p-2 mt-[-7px]">
@@ -42,7 +42,7 @@ export default function BentoGrid() {
 
             <div className="item w-full h-auto mt-4 rounded-md relative overflow-hidden flex justify-between flex-col hover:translate-x-1 transition-transform duration-500 ease-in-out hover:cursor-pointer">
               <div className="w-full h-8 flex justify-start items-center p-2">
-                <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={20} width={20}/>
+                <Image src={"assets/icons/gym.svg"} alt="Imagen" height={20} width={20}/>
                 <h4 className="ml-[4px] text-sm font-bold text-neutral-300">Consulta tus ejercicios favoritos</h4>
               </div>
               <div className="w-full h-auto flex justify-start items-center font-semibold p-2 mt-[-7px]">
