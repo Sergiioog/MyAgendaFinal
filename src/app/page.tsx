@@ -39,13 +39,13 @@ export default function Home() {
           <h3 className="h3 text-center">Tu aplicación deportiva favorita</h3>
         </div>
       </section>
-      <section className="h-auto w-full relative mt-10">
+      <section className="h-auto w-full relative mt-14">
         <h3 className="h3-secciones text-center">Qué es MyAgenda</h3>
-        <p className="textos mt-5 max-w-[90%] w-[90%] m-auto " >My agenda es una aplicacion que sirve para que los usuarios 
+        <p className="textos mt-8 max-w-[90%] w-[90%] m-auto  " >My agenda es una aplicacion que sirve para que los usuarios 
           de gimnasio puedan realizar sus registros personales. 
         </p>
         <br />
-        <p className="textos max-w-[90%] w-[90%] m-auto " >
+        <p className="textos max-w-[90%] w-[90%] m-auto  mt-2" >
           A medida
           que se van rellenando estos registros, el usuario podrá ver sus estadísticas
           las cuáles va a ver si se desarrolla correctamente y si está ganando masa muscular.
@@ -54,10 +54,12 @@ export default function Home() {
           <PrimaryButton />
         </div>
       </section>
-      <section className="h-auto w-full relative mt-10 ">
+
+      <section className="h-auto w-full relative  mt-24 ">
         <h3 className="h3-secciones text-center">MyAgenda, características</h3>
         <BentoGrid />
       </section>
+
       <section className="h-auto w-full relative mt-10">
         <GlobeDemo />
       </section>
@@ -69,33 +71,31 @@ export default function Home() {
         <h3 className="h3-secciones text-center">Por qué MyAgenda</h3>
         <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
-  </div>
+          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
+            <Image src={"assets/icons/calendarbento.svg"} alt="Imagen" height={40} width={40}/>
+          </div>
 
-</section>
-
-
+        </section>
       </section>
 
     </main>
