@@ -76,7 +76,6 @@ export default function Home() {
           que se van rellenando estos registros, el usuario podrá ver sus 
         </p>
         <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
-
           <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
             <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
           </div>
@@ -110,7 +109,15 @@ export default function Home() {
             <Image src={"/assets/mock/mockdesk/laptopmob.png"} alt="Movil" height={400} width={380} />
         </section>
       </section>
-      <FooterComponent />
+      <section className="max-w-[90%] w-[90%] m-auto mt-24 ">
+        <h3 className="h3-secciones text-center">¡Síguenos en nuestras redes sociales!</h3>
+          <section className="w-full bg-red-500 mt-8">
+            <p>Hola</p>
+          </section>
+      </section>
+      <section className="w-[100%] p-0 m-0 mt-24 ">
+        <FooterComponent />
+      </section>
     </main>
   );
 }
