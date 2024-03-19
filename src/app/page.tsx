@@ -5,7 +5,7 @@ import PrimaryButton from "./ui/button1";
 import { GlobeDemo } from "./ui/globe2";
 import BentoGrid from "./ui/bentogrid";
 import { InfiniteMovingCardsDemo } from "./ui/infinite-cards";
-import Component from "./ui/Button";
+import FooterComponent from "./ui/Footer";
 
 export default function Home() {
   return (
@@ -110,7 +110,7 @@ export default function Home() {
             <Image src={"/assets/mock/mockdesk/laptopmob.png"} alt="Movil" height={400} width={380} />
         </section>
       </section>
-      <Component />
+      <FooterComponent />
     </main>
   );
 }
