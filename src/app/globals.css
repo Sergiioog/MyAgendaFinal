@@ -83,7 +83,7 @@ h1 {
 }
 /*-----------BENTO GRID----------*/
 .item {
-  background: rgba( 255, 255, 255, 0 );
+  background: rgba(23, 23, 23, 0.429);
   box-shadow: 0 0 10px rgba(220, 220, 220, 0.37);
   backdrop-filter: blur( 17px );
   -webkit-backdrop-filter: blur( 17px );

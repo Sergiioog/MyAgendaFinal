@@ -8,7 +8,6 @@ export function InfiniteMovingCardsDemo() {
     <div className="h-auto rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
-
         direction="right"
         speed="slow"
       />

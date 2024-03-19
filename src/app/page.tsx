@@ -72,30 +72,30 @@ export default function Home() {
       </section>
       <section className="h-auto w-full relative mt-24">
         <h3 className="h3-secciones text-center">Por qué MyAgenda</h3>
-        <p className="textos max-w-[90%] w-[90%] m-auto  mt-6" >
-          A medida
-          que se van rellenando estos registros, el usuario podrá ver sus 
+        <p className="textos max-w-[90%] w-[90%] m-auto text-center  mt-6" >
+          Estas son las razones por las cuáles nuestros usuarios utilizan la aplicación.
         </p>
-        <section className="w-[100%] mt-8 flex flex-col justify-center m-auto items-center flex-wrap">
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
-          </div>
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/gym2.svg"} alt="Gym icono" height={40} width={40}/>
-          </div>
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/book.svg"} alt="Libro icono" height={40} width={40}/>
-          </div>
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/gym.svg"} alt="Gym2 icono" height={40} width={40}/>
-          </div>
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/stats.svg"} alt="Estadisticas Icono" height={40} width={40}/>
-          </div>
-          <div className="porqueBox w-16 h-16 flex justify-center items-center m-5">
-            <Image src={"assets/icons/corazon.svg"} alt="Corazón Icono" height={40} width={40}/>
-          </div>
-        </section>
+        <section className="w-full mt-8 grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-28">
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
+  </div>
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/gym2.svg"} alt="Gym icono" height={40} width={40}/>
+  </div>
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/book.svg"} alt="Libro icono" height={40} width={40}/>
+  </div>
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/gym.svg"} alt="Gym2 icono" height={40} width={40}/>
+  </div>
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/stats.svg"} alt="Estadisticas Icono" height={40} width={40}/>
+  </div>
+  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
+    <Image src={"assets/icons/corazon.svg"} alt="Corazón Icono" height={40} width={40}/>
+  </div>
+</section>
+
       </section>
         
       <section className="w-[100%] mt-24 flex flex-col justify-center m-auto items-center flex-wrap">
