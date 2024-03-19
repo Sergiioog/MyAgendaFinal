@@ -5,6 +5,8 @@ import PrimaryButton from "./ui/button1";
 import { GlobeDemo } from "./ui/globe2";
 import BentoGrid from "./ui/bentogrid";
 import { InfiniteMovingCardsDemo } from "./ui/infinite-cards";
+import Component from "./ui/Button";
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -108,6 +110,7 @@ export default function Home() {
             <Image src={"/assets/mock/mockdesk/laptopmob.png"} alt="Movil" height={400} width={380} />
         </section>
       </section>
+      <Component />
     </main>
   );
 }
