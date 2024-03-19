@@ -5,6 +5,7 @@ import PrimaryButton from "./ui/button1";
 import { GlobeDemo } from "./ui/globe2";
 import BentoGrid from "./ui/bentogrid";
 import { InfiniteMovingCardsDemo } from "./ui/infinite-cards";
+import SocialButton from "./ui/SocialButton";
 import FooterComponent from "./ui/Footer";
 
 export default function Home() {
@@ -111,8 +112,11 @@ export default function Home() {
       </section>
       <section className="max-w-[90%] w-[90%] m-auto mt-24 ">
         <h3 className="h3-secciones text-center">¡Síguenos en nuestras redes sociales!</h3>
-          <section className="w-full bg-red-500 mt-8">
-            <p>Hola</p>
+          <section className="w-full mt-8 flex justify-center items-center flex-1 flex-wrap">
+            <SocialButton />
+            <SocialButton />
+            <SocialButton />
+            <SocialButton />
           </section>
       </section>
       <section className="w-[100%] p-0 m-0 mt-24 ">
