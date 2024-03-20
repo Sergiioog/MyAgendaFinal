@@ -137,10 +137,36 @@ export default function Home() {
       <section className="max-w-[90%] w-[90%] m-auto mt-24 ">
         <h3 className="h3-secciones text-center">¡Síguenos en nuestras redes sociales!</h3>
           <section className="w-full mt-8 flex justify-center items-center flex-1 flex-wrap">
-            <SocialButton />
-            <SocialButton />
-            <SocialButton />
-            <SocialButton />
+            <SocialButton 
+              width={120} 
+              height={30} 
+              borderRadius={15} 
+              backgroundColor={"red"} 
+              icon={"/assets/icons/github.svg"} 
+              text={"GitHub"} 
+              alt={"GitHub button"} 
+            />
+            
+            <SocialButton 
+              width={120} 
+              height={30} 
+              borderRadius={15} 
+              backgroundColor={"red"} 
+              icon={"/assets/icons/linkedin.svg"} 
+              text={"LinkedIn"} 
+              alt={"GitHub button"} 
+            />
+
+            <SocialButton 
+              width={120} 
+              height={30} 
+              borderRadius={15} 
+              backgroundColor={"red"} 
+              icon={"/assets/icons/twitter.svg"} 
+              text={"Twitter"} 
+              alt={"GitHub button"} 
+            />
+           
           </section>
       </section>
       <section className="w-[100%] p-0 m-0 mt-24 ">
