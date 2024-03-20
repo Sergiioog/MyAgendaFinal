@@ -66,7 +66,7 @@ export default function Home() {
       <section className="h-auto w-full relative mt-24 ">
         <GlobeDemo />
       </section>
-      <section className="h-auto w-full relative mt-[-50px]">
+      <section className="h-auto w-full relative mt-[-80px]">
         <h3 className="h3-secciones text-center">Opiniones de nuestros usuarios.</h3>
         <InfiniteMovingCardsDemo />
       </section>
@@ -75,27 +75,51 @@ export default function Home() {
         <p className="textos max-w-[90%] w-[90%] m-auto text-center  mt-6" >
           Estas son las razones por las cuáles nuestros usuarios utilizan la aplicación.
         </p>
-        <section className="w-full mt-8 grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-28">
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
-  </div>
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/gym2.svg"} alt="Gym icono" height={40} width={40}/>
-  </div>
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/book.svg"} alt="Libro icono" height={40} width={40}/>
-  </div>
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/gym.svg"} alt="Gym2 icono" height={40} width={40}/>
-  </div>
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/stats.svg"} alt="Estadisticas Icono" height={40} width={40}/>
-  </div>
-  <div className="porqueBox w-16 h-16 flex justify-center items-center m-auto">
-    <Image src={"assets/icons/corazon.svg"} alt="Corazón Icono" height={40} width={40}/>
-  </div>
-</section>
+        <section className="w-full mt-8 grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2  ">
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/calendarbento.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
 
+          </div>
+
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center ">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/gym.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
+          </div>
+
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center ">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/gym2.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
+          </div>
+
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center ">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/book.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
+          </div>
+
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center ">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/corazon.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
+          </div>
+
+          <div className=" w-full h-auto p-8 flex flex-col justify-center items-center ">
+            <div className="porqueBox w-16 h-16 flex justify-center items-center">
+              <Image src={"assets/icons/stats.svg"} alt="Calendario icono" height={40} width={40}/>
+            </div>
+            <p className="mt-4 text-center text-sm text-neutral-300 w-full ">Con nuestra agenda podrás registrar tu actividad física</p>
+          </div>
+
+        </section>
       </section>
         
       <section className="w-[100%] mt-24 flex flex-col justify-center m-auto items-center flex-wrap">
