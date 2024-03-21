@@ -138,34 +138,56 @@ export default function Home() {
         <h3 className="h3-secciones text-center">¡Síguenos en nuestras redes sociales!</h3>
           <section className="w-full mt-8 flex justify-center items-center flex-1 flex-wrap">
             <SocialButton 
-              width={120} 
-              height={30} 
-              borderRadius={15} 
-              backgroundColor={"red"} 
-              icon={"/assets/icons/github.svg"} 
-              text={"GitHub"} 
-              alt={"GitHub button"} 
-            />
-            
-            <SocialButton 
-              width={120} 
-              height={30} 
-              borderRadius={15} 
-              backgroundColor={"red"} 
-              icon={"/assets/icons/linkedin.svg"} 
-              text={"LinkedIn"} 
-              alt={"GitHub button"} 
+              width={115}
+              height={35}
+              borderRadius={15}
+              backgroundColor={"rgba( 32, 29, 29, 0.35 )"}
+              boxShadowRound={16}
+              colorShadow={"rgba(222, 222, 227, 0.37)"}
+              backdropFilter={7.5}
+              icon={"/assets/icons/github.svg"}
+              text={"GitHub"}
+              alt={"GitHub button"}
+              border={"1"} 
+              colorBorder={" rgba( 255, 255, 255, 0.18 )"}  
+              textColor="rgba(247, 243, 243, 0.795)"          
             />
 
             <SocialButton 
-              width={120} 
-              height={30} 
-              borderRadius={15} 
-              backgroundColor={"red"} 
-              icon={"/assets/icons/twitter.svg"} 
-              text={"Twitter"} 
-              alt={"GitHub button"} 
+              width={115}
+              height={35}
+              borderRadius={15}
+              backgroundColor={"rgba( 1, 88, 255, 0.35 )"}
+              boxShadowRound={16}
+              colorShadow={"rgba(222, 222, 227, 0.37)"}
+              backdropFilter={7.5}
+              icon={"/assets/icons/linkedin.svg"}
+              text={"LinkedIn"}
+              alt={"LinkedIn button"}
+              border={"1"} 
+              colorBorder={" rgba( 255, 255, 255, 0.18 )"}  
+              textColor="rgba(247, 243, 243, 0.795)"          
             />
+
+            <SocialButton 
+              width={115}
+              height={35}
+              borderRadius={15}
+              backgroundColor={" rgba( 91, 150, 255, 0.35 )"}
+              boxShadowRound={16}
+              colorShadow={"rgba(222, 222, 227, 0.37)"}
+              backdropFilter={7.5}
+              icon={"/assets/icons/twitter.svg"}
+              text={"Twitter"}
+              alt={"Twitter button"}
+              border={"1"} 
+              colorBorder={" rgba( 255, 255, 255, 0.18 )"}  
+              textColor="rgba(247, 243, 243, 0.795)"          
+            />
+            
+          
+
+            
            
           </section>
       </section>
