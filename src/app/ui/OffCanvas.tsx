@@ -4,6 +4,7 @@ import { Button, Drawer } from 'antd';
 import Image from 'next/image';
 import UseAnimations from 'react-useanimations';
 import menu2 from 'react-useanimations/lib/menu2'
+import Link from 'next/link';
 
 
 const App: React.FC = () => {
@@ -26,13 +27,15 @@ const App: React.FC = () => {
         <ul> {/* Utilizamos una lista ul para envolver los elementos li */}
           <li className='h-8 mb-4 flex justify-start items-center  '>
             <Image src={'../assets/icons/inicio.svg'} alt='Inicio' className='hover:cursor-pointer' width={29} height={28} />
-            <h3 className='list text-2xl mt-1 ml-[6.5px] font-medium hover:cursor-pointer text-black'>
-              Inicio
-            </h3>
+            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+              <Link href={"/"} >Inicio</Link>
+            </h3>          
           </li>
           <li className='h-8 mb-4 flex justify-start items-center ml-[1.5px] '>
             <Image src={'../assets/icons/calendar.svg'} alt='Registros' className='hover:cursor-pointer' width={26} height={26} />
-            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>Mis registros</h3>
+            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+              <Link href={"/registros"} >Mis registros</Link>
+            </h3>
           </li>
           <li className='h-8 mb-4 flex justify-start items-center  '>
             <Image src={'../assets/icons/ejercicios.svg'} alt='Ejercicios' className='hover:cursor-pointer' width={28} height={28} />
@@ -47,6 +50,8 @@ const App: React.FC = () => {
             <h3 className='list text-2xl mt-[2px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>Usuario</h3>
           </li>
         </ul>
+     
+
       </Drawer>
     </>
   );
