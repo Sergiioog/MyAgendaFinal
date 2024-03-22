@@ -24,34 +24,39 @@ const App: React.FC = () => {
         <UseAnimations animation={menu2} size={40} fillColor='white' strokeColor='white' />      
       </Button>
       <Drawer onClose={onClose} open={open} footer='MyAgenda © All rights reserved' width={320}>
-        <ul> {/* Utilizamos una lista ul para envolver los elementos li */}
-          <li className='h-8 mb-4 flex justify-start items-center  '>
+      <ul>
+        <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/inicio.svg'} alt='Inicio' className='hover:cursor-pointer' width={29} height={28} />
-            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
-              <Link href={"/"} >Inicio</Link>
-            </h3>          
-          </li>
-          <li className='h-8 mb-4 flex justify-start items-center ml-[1.5px] '>
+            <Link href={"/"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+                Inicio
+            </Link>
+        </li>
+        <li className='h-8 mb-4 flex justify-start items-center ml-[1.5px] '>
             <Image src={'../assets/icons/calendar.svg'} alt='Registros' className='hover:cursor-pointer' width={26} height={26} />
-            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
-              <Link href={"/registros"} >Mis registros</Link>
-            </h3>
-          </li>
-          <li className='h-8 mb-4 flex justify-start items-center  '>
+            <Link href={"/registros"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+                Mis registros
+            </Link>
+        </li>
+        <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/ejercicios.svg'} alt='Ejercicios' className='hover:cursor-pointer' width={28} height={28} />
-            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
-              <Link href={"/ejercicios"} >Ejercicios</Link>
-            </h3>   
-          </li>
-          <li className='h-8 mb-4 flex justify-start items-center  '>
+            <Link href={"/ejercicios"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+                Ejercicios
+            </Link>
+        </li>
+        <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/estiramientos.svg'} alt='Estiramientos' className='hover:cursor-pointer' width={29} height={28} />
-            <h3 className='list text-2xl mt-1 ml-[6.5px] font-medium hover:cursor-pointer text-black'>Estiramientos</h3>
-          </li>
-          <li className='h-8 mb-4 flex justify-start items-center  '>
+            <Link href={"/estiramientos"} className='list text-2xl mt-1 ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+                Estiramientos
+            </Link>
+        </li>
+        <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/usuario.svg'} alt='Usuarios' className='hover:cursor-pointer' width={32} height={28} />
-            <h3 className='list text-2xl mt-[2px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>Usuario</h3>
-          </li>
-        </ul>
+            <Link href={"/usuario"} className='list text-2xl mt-[2px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+                Usuario
+            </Link>
+        </li>
+    </ul>
+
      
 
       </Drawer>
