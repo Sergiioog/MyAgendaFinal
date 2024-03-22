@@ -39,7 +39,9 @@ const App: React.FC = () => {
           </li>
           <li className='h-8 mb-4 flex justify-start items-center  '>
             <Image src={'../assets/icons/ejercicios.svg'} alt='Ejercicios' className='hover:cursor-pointer' width={28} height={28} />
-            <h3 className='list text-2xl mt-[1px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>Ejercicios</h3>
+            <h3 className='list text-2xl  ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+              <Link href={"/ejercicios"} >Ejercicios</Link>
+            </h3>   
           </li>
           <li className='h-8 mb-4 flex justify-start items-center  '>
             <Image src={'../assets/icons/estiramientos.svg'} alt='Estiramientos' className='hover:cursor-pointer' width={29} height={28} />
