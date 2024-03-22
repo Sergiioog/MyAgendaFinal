@@ -1,5 +1,10 @@
+import Header from "../ui/header"
+
 export default function MisRegistros() {
     return(
-        <p>Hola</p>
+        <main className="min-h-screen">
+            <Header />
+
+        </main>
     )
 }
