@@ -6,7 +6,7 @@ export default function MisRegistros() {
         <main className="min-h-screen">
             <Header />
             <section className="h-auto w-full relative">
-                <h3 className="h3 text-center mt-10">Informacion sobre ejercicios</h3>
+                <h3 className="h3 text-center mt-10 w-3/4 m-auto">Informacion sobre ejercicios por grupo muscular</h3>
                 <section className="w-full mt-8 grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2  ">
                     <div className="w-full h-auto p-8 flex flex-col justify-center items-center">
                         <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
@@ -21,21 +21,31 @@ export default function MisRegistros() {
                     </div>
 
                     <div className="w-full h-auto p-8 flex flex-col justify-center items-center">
-                        <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
-                            <Image src={"/assets/images/abd.png"} alt="Abdominales foto" height={200} width={100}/>
+                        <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform overflow-hidden duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
+                            <Image src={"/assets/images/abd.png"} alt="Abdominales foto" height={200} width={150} />
                         </div>
                     </div>
 
                     <div className="w-full h-auto p-8 flex flex-col justify-center items-center">
                         <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
-                            <Image src={"/assets/images/hombros.png"} alt="Hombros foto" height={300} width={300}/>
+                            <div className="hombroGrande">
+                            <Image
+                                src={"/assets/images/hombros.png"}
+                                alt="Hombros foto"
+                                height={200}
+                                width={200}
+                                className="hombroGrande"
+                            />
+                            </div>
                         </div>
                     </div>
 
 
+
                     <div className="w-full h-auto p-8 flex flex-col justify-center items-center">
                         <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
-                            <Image src={"/assets/images/biceps.png"} alt="Biceps foto" fill={true}/>
+                            <Image src={"/assets/images/biceps.png"} alt="Biceps foto"  height={200}
+                                width={200}/>
                         </div>
                     </div>
 

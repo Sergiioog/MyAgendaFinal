@@ -56,9 +56,6 @@ const App: React.FC = () => {
             </Link>
         </li>
     </ul>
-
-     
-
       </Drawer>
     </>
   );
