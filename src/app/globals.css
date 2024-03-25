@@ -135,7 +135,13 @@ h1 {
 
 /*----------EJERCICIOS------------*/
 
+.profile {
+  background-color: #080a0f;
+}
+.profile2pic {
+  background-color: #1c1c1d;
 
+}
 
 @layer utilities {
   .text-balance {
