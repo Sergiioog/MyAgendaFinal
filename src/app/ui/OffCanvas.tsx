@@ -33,25 +33,25 @@ const App: React.FC = () => {
         </li>
         <li className='h-8 mb-4 flex justify-start items-center ml-[1.5px] '>
             <Image src={'../assets/icons/calendar.svg'} alt='Registros' className='hover:cursor-pointer' width={26} height={26} />
-            <Link href={"/registros"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+            <Link href={"/pages/registros"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
                 Mis registros
             </Link>
         </li>
         <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/ejercicios.svg'} alt='Ejercicios' className='hover:cursor-pointer' width={28} height={28} />
-            <Link href={"/ejercicios"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+            <Link href={"/pages/ejercicios"} className='list text-2xl ml-[6.5px] font-medium hover:cursor-pointer text-black'>
                 Ejercicios
             </Link>
         </li>
         <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/estiramientos.svg'} alt='Estiramientos' className='hover:cursor-pointer' width={29} height={28} />
-            <Link href={"/estiramientos"} className='list text-2xl mt-1 ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+            <Link href={"/pages/estiramientos"} className='list text-2xl mt-1 ml-[6.5px] font-medium hover:cursor-pointer text-black'>
                 Estiramientos
             </Link>
         </li>
         <li className='h-8 mb-4 flex justify-start items-center'>
             <Image src={'../assets/icons/usuario.svg'} alt='Usuarios' className='hover:cursor-pointer' width={32} height={28} />
-            <Link href={"/usuario"} className='list text-2xl mt-[2px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>
+            <Link href={"/pages/usuario"} className='list text-2xl mt-[2px] ml-[6.5px] font-medium hover:cursor-pointer text-black'>
                 Usuario
             </Link>
         </li>

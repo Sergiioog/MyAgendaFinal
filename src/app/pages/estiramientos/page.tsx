@@ -1,4 +1,4 @@
-import Header from "../ui/header"
+import Header from "../../ui/header"
 import Image from "next/image"
 
 export default function MisRegistros() {
@@ -6,7 +6,7 @@ export default function MisRegistros() {
         <main className="min-h-screen">
             <Header />
             <section className="h-auto w-full relative">
-                <h3 className="h3 text-center mt-10 w-3/4 m-auto">Informacion sobre ejercicios por grupo muscular</h3>
+                <h3 className="h3 text-center mt-10 w-3/4 m-auto">Informacion sobre estiramientos por grupo muscular</h3>
                 <section className="w-full mt-8 grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2  ">
                     <div className="w-full h-auto p-8 flex flex-col justify-center items-center">
                         <div className="porqueBox w-36 h-36 flex justify-center items-center transform transition-transform duration-300 ease-in-out hover:cursor-pointer hover:scale-105">
