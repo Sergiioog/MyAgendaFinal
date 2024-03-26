@@ -1,6 +1,7 @@
 import Header from "../../ui/header"
 import Image from "next/image"
 import ProfileButton from "@/app/ui/profilebutton"
+import SectionDataProfile from "@/app/ui/sectiondataprofile"
 
 export default function MisRegistros() {
     return(
@@ -24,46 +25,20 @@ export default function MisRegistros() {
                     </div>
                     <div className="h-auto absolute w-full flex justify-end items-center p-3 flex-col">
                         <p className="text-white text-2xl font-semibold z-30 mt-20 w-full flex justify-center items-center">Sergio García</p>
-                        <p className="text-neutral-500 text-lg  font-semibold z-30 w-full flex justify-center items-center">@sergiioog</p>
-                        <div className="h-[300px] w-full flex  items-center mt-5 bg-neutral-800 rounded-md  flex-col">
-                            <div className="w-full h-auto p-2 ">
-                                <p className="text-neutral-500 text-md font-semibold z-30 w-full ">Información personal</p>
-                                {/* <div className="   "> grid justify-center items-center grid-cols-2 md:grid-cols-3 md:grid-rows-2 */}
-                               <div className="w-full max-h-full">
-                                    <div className="mt-2 flex justify-start items-center">
-                                        <Image src={"/assets/icons/userprofile.svg"} alt="Icono perfil" height={25} width={25}/>
-                                        <p className="ml-1 text-white text-md font-semibold z-30 w-full">Datos del usuario</p>
-                                    </div>
-                               </div>
-                               
-                               <div className="w-full max-h-full">
-                                    <div className="mt-2 flex justify-start items-center">
-                                        <Image src={"/assets/icons/mobile.svg"} alt="Icono perfil" height={25} width={25}/>
-                                        <p className="ml-1 text-white text-md font-semibold z-30 w-full">Número de teléfono</p>
-                                    </div>
-                               </div>
+                        <p className="text-neutral-500 text-lg  font-semibold z-30 w-full flex justify-center items-center">@sergiioog || 1200 seguidores</p>
+                        <div className="w-full hidden">
+                            <SectionDataProfile />
+                        </div>
+                        <div className="max-h-[150px] h-[150px] w-full flex justify-start items-center mt-5 bg-neutral-800 rounded-md p-2 flex-col">
+                            <p className="text-neutral-500 text-md  font-semibold z-30 w-full flex justify-start items-center ">Estado</p>
+                            <p className="text-white w-full text-sm font-semibold ">Hola soy Sergio García y esto es una 
+                            prueba de un posible estado para mi aplicacion. Me encanta hacer deporte e ir al gimnasio por lo
+                            que esto me va a venir de perlas</p>
+                        </div>
+                        <div className="max-h-[400px] h-[400px] w-full flex justify-start items-center mt-5 bg-neutral-800 rounded-md p-2 flex-col">
+                            <p className="text-neutral-500 text-md  font-semibold z-30 w-full flex justify-start items-center ">Estadísticas de Sergio</p>
 
-                               <div className="w-full max-h-full">
-                                    <div className="mt-2 flex justify-start items-center">
-                                        <Image src={"/assets/icons/flag.svg"} alt="Icono perfil" height={25} width={25}/>
-                                        <p className="ml-1 text-white text-md font-semibold z-30 w-full">País de procedencia</p>
-                                    </div>
-                               </div>
-
-                               <div className="w-full max-h-full">
-                                    <div className="mt-2 flex justify-start items-center">
-                                        <Image src={"/assets/icons/emailprofile.svg"} alt="Icono perfil" height={25} width={25}/>
-                                        <p className="ml-1 text-white text-md font-semibold z-30 w-full">Email</p>
-                                    </div>
-                               </div>
-
-                               <div className="w-full max-h-full">
-                                    <div className="mt-2 flex justify-start items-center">
-                                        <Image src={"/assets/icons/password.svg"} alt="Icono perfil" height={25} width={25}/>
-                                        <p className="ml-1 text-white text-md font-semibold z-30 w-full">Contraseña</p>
-                                    </div>
-                               </div>
-                            </div>
+                            
                         </div>
                     </div>
 

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "@react-three/drei": "^9.102.5",
     "@react-three/fiber": "^8.15.19",
     "@tabler/icons-react": "^3.1.0",
     "antd": "^5.15.1",
     "clsx": "^2.1.0",
     "flowbite-react": "^0.7.3",
-    "framer-motion": "^11.0.14",
+    "framer-motion": "^11.0.21",
     "icons-react": "^3.7.1",
     "next": "^13.5.6",
     "react": "^18.2.0",
