@@ -2,6 +2,7 @@ import Header from "../../ui/header"
 import Image from "next/image"
 import ProfileButton from "@/app/ui/profilebutton"
 import SectionDataProfile from "@/app/ui/sectiondataprofile"
+import Link from "next/link"
 
 export default function MisRegistros() {
     return(
@@ -30,7 +31,7 @@ export default function MisRegistros() {
                     <div className="h-auto absolute w-full flex justify-end items-center p-3 flex-col">
                         <p className="text-white text-2xl font-semibold z-30 mt-20 w-full flex justify-center items-center">Sergio García</p>
                         <p className="text-neutral-500 text-lg  font-semibold z-30 w-full flex justify-center items-center">@sergiioog || 1200 seguidores</p>
-                        <div className="w-full hidden">
+                        <div className="w-full">
                             <SectionDataProfile />
                         </div>
                         <div className="max-h-[150px] h-[150px] w-full flex justify-start items-center mt-5 bg-neutral-800 rounded-md p-2 flex-col">
