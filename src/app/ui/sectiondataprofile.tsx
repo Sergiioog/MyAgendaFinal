@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import Image from "next/image"
 export default function SectionDataProfile() {
     return (
         <div className="h-[300px] w-full flex  items-center mt-5 bg-neutral-800 rounded-md  flex-col">
