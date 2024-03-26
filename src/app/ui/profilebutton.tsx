@@ -1,5 +1,12 @@
-export default function ProfileButton() {
+
+interface Props {
+    texto:string;
+}
+export default function ProfileButton({
+    texto
+}: Props) {
     return (
-        <button>Editar perfil</button>
+        
+        <button>{texto}</button>
     )
 }
