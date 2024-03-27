@@ -7,6 +7,7 @@ import BentoGrid from "./ui/bentogrid";
 import { InfiniteMovingCardsDemo } from "./ui/infinite-cards";
 import SocialButton from "./ui/SocialButton";
 import FooterComponent from "./ui/Footer";
+import Example from "./ui/calendar";
 
 export default function Home() {
   return (
